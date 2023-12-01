@@ -1,4 +1,4 @@
-; (function ($) {
+;(function ($) {
     "use strict";
 
     $(document).ready(function () {
@@ -10,33 +10,33 @@
             e.preventDefault();
         })
 
-        $(document).on('mouseover','.single-intro-inner',function() {
+        $(document).on('mouseover', '.single-intro-inner', function () {
             $(this).addClass('single-intro-inner-active');
             $('.single-intro-inner').removeClass('single-intro-inner-active');
             $(this).addClass('single-intro-inner-active');
         });
 
-        $(document).on('mouseover','.single-pricing-wrap',function() {
+        $(document).on('mouseover', '.single-pricing-wrap', function () {
             $(this).addClass('single-pricing-wrap-active');
             $('.single-pricing-wrap').removeClass('single-pricing-wrap-active');
             $(this).addClass('single-pricing-wrap-active');
         });
-       
+
         /*-------------------------------------
             menu
         -------------------------------------*/
-        $('.navbar-area .menu').on('click', function() {
+        $('.navbar-area .menu').on('click', function () {
             $(this).toggleClass('open');
             $('.navbar-area .navbar-collapse').toggleClass('sopen');
         });
-    
+
         // mobile menu
         if ($(window).width() < 992) {
             $(".in-mobile").clone().appendTo(".sidebar-inner");
             $(".in-mobile ul li.menu-item-has-children").append('<i class="fas fa-chevron-right"></i>');
             $('<i class="fas fa-chevron-right"></i>').insertAfter("");
 
-            $(".menu-item-has-children a").on('click', function(e) {
+            $(".menu-item-has-children a").on('click', function (e) {
                 // e.preventDefault();
 
                 $(this).siblings('.sub-menu').animate({
@@ -47,8 +47,8 @@
 
         var menutoggle = $('.menu-toggle');
         var mainmenu = $('.navbar-nav');
-        
-        menutoggle.on('click', function() {
+
+        menutoggle.on('click', function () {
             if (menutoggle.hasClass('is-active')) {
                 mainmenu.removeClass('menu-open');
             } else {
@@ -59,12 +59,12 @@
         /*--------------------------------------------------
             select onput
         ---------------------------------------------------*/
-        if ($('.single-select').length){
+        if ($('.single-select').length) {
             $('.single-select').niceSelect();
         }
 
         /* --------------------------------------------------
-            isotop filter 
+            isotop filter
         ---------------------------------------------------- */
         var $Container = $('.isotop-filter-area');
         if ($Container.length > 0) {
@@ -82,7 +82,7 @@
                     });
                 });
             });
-            $(document).on('click','.isotop-filter-menu > button' , function () {
+            $(document).on('click', '.isotop-filter-menu > button', function () {
                 $(this).siblings().removeClass('active');
                 $(this).addClass('active');
             });
@@ -91,23 +91,23 @@
         /*--------------------------------------------
             Search Popup
         ---------------------------------------------*/
-        var bodyOvrelay =  $('#body-overlay');
+        var bodyOvrelay = $('#body-overlay');
         var searchPopup = $('#td-search-popup');
         var sidebarMenu = $('#sidebar-menu');
 
-        $(document).on('click','#body-overlay',function(e){
+        $(document).on('click', '#body-overlay', function (e) {
             e.preventDefault();
             bodyOvrelay.removeClass('active');
             searchPopup.removeClass('active');
             sidebarMenu.removeClass('active');
         });
-        $(document).on('click','.search-bar-btn',function(e){
+        $(document).on('click', '.search-bar-btn', function (e) {
             e.preventDefault();
             searchPopup.addClass('active');
-        bodyOvrelay.addClass('active');
+            bodyOvrelay.addClass('active');
         });
 
-        // sidebar menu 
+        // sidebar menu
         $(document).on('click', '.sidebar-menu-close', function (e) {
             e.preventDefault();
             bodyOvrelay.removeClass('active');
@@ -138,10 +138,9 @@
             dots: false,
             items: 1,
             smartSpeed: 1800,
-            navText: ['<img src="assets/img/icon/left-arrow.png"/>','<img src="assets/img/icon/right-arrow.png"/>'],           
+            navText: ['<img src="assets/img/icon/left-arrow.png"/>', '<img src="assets/img/icon/right-arrow.png"/>'],
         });
 
-        
 
         /*------------------------------------------------
             feature-slider
@@ -153,22 +152,22 @@
             smartSpeed: 1500,
             items: 3,
             loop: true,
-            autoplay:true,
-            navText: ['<img src="assets/img/icon/left-arrow.png"/>','<img src="assets/img/icon/right-arrow.png"/>'],           
-            responsive : {                
-                769 : {
+            autoplay: true,
+            navText: ['<img src="assets/img/icon/left-arrow.png"/>', '<img src="assets/img/icon/right-arrow.png"/>'],
+            responsive: {
+                769: {
                     items: 3,
                 },
-                577 : {
+                577: {
                     items: 2,
                 },
-                0 : {
+                0: {
                     items: 1,
                 }
-            },             
+            },
         });
 
-        
+
         /*------------------------------------------------
             project-slider
         ------------------------------------------------*/
@@ -179,24 +178,24 @@
             smartSpeed: 1500,
             items: 3,
             loop: true,
-            autoplay:true,
-            navText: ['<img src="assets/img/icon/left-arrow.png"/>','<img src="assets/img/icon/right-arrow.png"/>'],           
-            responsive : {               
-                1600 : {
+            autoplay: true,
+            navText: ['<img src="assets/img/icon/left-arrow.png"/>', '<img src="assets/img/icon/right-arrow.png"/>'],
+            responsive: {
+                1600: {
                     items: 4,
                     stagePadding: 200,
-                },                
-                769 : {
+                },
+                769: {
                     items: 3,
                     stagePadding: 0,
                 },
-                577 : {
+                577: {
                     items: 2,
                 },
-                0 : {
+                0: {
                     items: 1,
                 }
-            },             
+            },
         });
 
         /*------------------------------------------------
@@ -209,19 +208,19 @@
             smartSpeed: 1500,
             items: 3,
             loop: true,
-            autoplay:true,
-            navText: ['<img src="assets/img/icon/left-arrow.png"/>','<img src="assets/img/icon/right-arrow.png"/>'],           
-            responsive : {                
-                769 : {
+            autoplay: true,
+            navText: ['<img src="assets/img/icon/left-arrow.png"/>', '<img src="assets/img/icon/right-arrow.png"/>'],
+            responsive: {
+                769: {
                     items: 3,
                 },
-                577 : {
+                577: {
                     items: 2,
                 },
-                0 : {
+                0: {
                     items: 1,
                 }
-            },             
+            },
         });
 
         /*------------------------------------------------
@@ -234,19 +233,19 @@
             smartSpeed: 1500,
             items: 3,
             loop: true,
-            autoplay:true,
-            navText: ['<img src="assets/img/icon/left-arrow.png"/>','<img src="assets/img/icon/right-arrow.png"/>'],           
-            responsive : {                
-                769 : {
+            autoplay: true,
+            navText: ['<img src="assets/img/icon/left-arrow.png"/>', '<img src="assets/img/icon/right-arrow.png"/>'],
+            responsive: {
+                769: {
                     items: 3,
                 },
-                577 : {
+                577: {
                     items: 2,
                 },
-                0 : {
+                0: {
                     items: 1,
                 }
-            },  
+            },
         });
 
         /*------------------------------------------------
@@ -259,21 +258,21 @@
             smartSpeed: 1500,
             items: 6,
             loop: true,
-            autoplay:true,
-            responsive : { 
-                1024 : {
+            autoplay: true,
+            responsive: {
+                1024: {
                     items: 6,
-                },               
-                769 : {
+                },
+                769: {
                     items: 3,
                 },
-                577 : {
+                577: {
                     items: 3,
                 },
-                0 : {
+                0: {
                     items: 2,
                 }
-            },  
+            },
         });
 
         /*------------------------------------------------
@@ -286,19 +285,19 @@
             smartSpeed: 1500,
             items: 3,
             loop: true,
-            autoplay:true,
-            navText: ['<img src="assets/img/icon/left-arrow.png"/>','<img src="assets/img/icon/right-arrow.png"/>'],           
-            responsive : {                
-                769 : {
+            autoplay: true,
+            navText: ['<img src="assets/img/icon/left-arrow.png"/>', '<img src="assets/img/icon/right-arrow.png"/>'],
+            responsive: {
+                769: {
                     items: 3,
                 },
-                577 : {
+                577: {
                     items: 2,
                 },
-                0 : {
+                0: {
                     items: 1,
                 }
-            },             
+            },
         });
 
         /*------------------------------------------------
@@ -306,7 +305,7 @@
         ------------------------------------------------*/
         var $swiper = $(".swiper-container");
         var $bottomSlide = null;
-        var $bottomSlideContent = null; 
+        var $bottomSlideContent = null;
 
         var mySwiper = new Swiper(".swiper-container", {
             spaceBetween: 1,
@@ -316,27 +315,32 @@
             loop: true,
             loopAdditionalSlides: 30,
             navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
             breakpoints: {
                 500: {
-                  slidesPerView: 1
+                    slidesPerView: 1
                 },
                 768: {
-                  slidesPerView: 1
+                    slidesPerView: 1
                 }
             }
         });
 
         $('.slider-for').slick({
+            autoplay: true,
+            autoplaySpeed: 10000,
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
             fade: true,
             asNavFor: '.slider-nav'
         });
+
         $('.slider-nav').slick({
+            autoplay: true,
+            autoplaySpeed: 10000,
             slidesToShow: 3,
             slidesToScroll: 1,
             asNavFor: '.slider-for',
@@ -346,39 +350,40 @@
         });
 
         /**---------------------------------------
-          Progress BAR
-        ----------------------------------------*/
+         Progress BAR
+         ----------------------------------------*/
         function td_Progress() {
             var progress = $('.progress-rate');
             var len = progress.length;
             for (var i = 0; i < len; i++) {
                 var progressId = '#' + progress[i].id;
                 var dataValue = $(progressId).attr('data-value');
-                $(progressId).css({'width':dataValue+'%'});
+                $(progressId).css({'width': dataValue + '%'});
             }
         }
+
         var progressRateClass = $('.progress-item');
         if ((progressRateClass).length) {
             td_Progress();
         }
-        $('.counting').each(function() {
+        $('.counting').each(function () {
             var $this = $(this),
-            countTo = $this.attr('data-count');
+                countTo = $this.attr('data-count');
 
-            $({ countNum: $this.text()}).animate({
-                countNum: countTo
-            },
-
-            {
-                duration: 2000,
-                easing:'linear',
-                step: function() {
-                    $this.text(Math.floor(this.countNum));
+            $({countNum: $this.text()}).animate({
+                    countNum: countTo
                 },
-                complete: function() {
-                    $this.text(this.countNum);
-                }
-            });  
+
+                {
+                    duration: 2000,
+                    easing: 'linear',
+                    step: function () {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function () {
+                        $this.text(this.countNum);
+                    }
+                });
         });
 
         /*------------------------------------------------
@@ -421,7 +426,7 @@
 
     });
 
-    $(window).on("scroll", function() {
+    $(window).on("scroll", function () {
         /*---------------------------------------
             back-to-top
         -----------------------------------------*/
@@ -458,7 +463,6 @@
         });
 
     });
-
 
 
 })(jQuery);

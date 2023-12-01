@@ -4,28 +4,26 @@
     <!-- banner start -->
     <div class="position-relative">
         <div class="slider slider-for banner-slider-main">
-
-            <div class="item" style="background: url(assets/img/home-3/banner1.jpg)">
+            <div class="item" style="background: url(assets/img/home-3/banner1.jpg);">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-10">
                             <div class="banner-inner style-white">
-
-                                <h1 style="color: black;" class="b-animate-2 title">
+                                <h1 id="opening" style="color: black;" class="b-animate-2 title">
                                     Building Zambia's Future with Global Insight and Local Action.
-
                                 </h1>
-                                {{--  <div class="btn-wrap">
-                                    <a class="btn btn-base b-animate-4" href="service.html">
-                                        Load more <i class="fa fa-arrow-right"></i></a>
-                                </div> --}}
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="item" style="background: url(assets/img/home-3/banner2.jpg)">
+            <div class="item" style="background: url(assets/img/home-3/banner2.jpg);">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
@@ -34,20 +32,20 @@
                                 <h1 class="b-animate-2 title">
                                     Connecting Commerce and Community.
                                 </h1>
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="item" style="background: url(assets/img/home-3/banner3.jpg)">
+            <div class="item" style="background: url(assets/img/home-3/banner3.jpg);">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6">
@@ -57,50 +55,45 @@
                                     A Tradition of Excellence!
 
                                 </h1>
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-
-
         </div>
         <div class="container position-relative">
             <div class="slider slider-nav banner-slider-main-nav">
                 <div class="item">
-                    <img src="{{ asset('assets/img/home-3/3.png') }}" alt="img" />
+                    <img src="{{ asset('assets/img/home-3/banner1.jpg') }}" alt="img"/>
                 </div>
                 <div class="item">
-                    <img src="{{ asset('assets/img/home-3/3.png') }}" alt="img" />
+                    <img src="{{ asset('assets/img/home-3/banner2.jpg') }}" alt="img"/>
                 </div>
                 <div class="item">
-                    <img src="{{ asset('assets/img/home-3/3.png') }}" alt="img" />
+                    <img src="{{ asset('assets/img/home-3/banner3.jpg') }}" alt="img"/>
                 </div>
 
             </div>
         </div>
-
-
     </div>
     <!-- banner end -->
 
-    <div class="home">
+    <div class="home" style="margin-top: 30px">
         <div style="margin-top:-25px;" class="container">
             <div class="row g-0">
                 <div class="col-lg-4">
                     <div class="media single-intro-inner">
-
                         <div class="media-body">
+                            <img src="{{ asset('gear.png') }}" style="width: 30%; text-align: center">
                             <h5 class="text-black">Efficiency</h5>
                             <p style="font-size: 14px" class="text-black text-small mb-0">
                                 Prompt delivery, the Dana way. We ensure your operations stay on track with our reliable
@@ -111,11 +104,12 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="media single-intro-inner single-intro-inner-active">
-
                         <div class="media-body">
+                            <img src="{{ asset('expertise.png') }}" style="width: 30%; text-align: center">
                             <h5 class="text-black">Global Expertise</h5>
                             <p style="font-size: 14px" class="text-black text-small mb-0">
-                                Spanning continents, delivering local value. Dana Holdings bridges international expertise
+                                Spanning continents, delivering local value. Dana Holdings bridges international
+                                expertise
                                 with Zambian vitality.
                             </p>
                         </div>
@@ -123,11 +117,12 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="media single-intro-inner">
-
                         <div class="media-body">
+                            <img src="{{ asset('partners.png') }}" style="width: 30%; text-align: center">
                             <h5 class="text-black">Supportive Partnership</h5>
                             <p style="font-size: 14px" class="text-black text-small mb-0">
-                                Always connected, always committed. With Dana Holdings, support is constant, ensuring your
+                                Always connected, always committed. With Dana Holdings, support is constant, ensuring
+                                your
                                 business thrives.
                             </p>
                         </div>
@@ -143,7 +138,9 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="about-thumb-wrap mb-lg-0 mb-4">
-                            <img class="hover-bg" src="{{ asset('/assets/img/home-3/DANA GROUP LOGO-03.jpg') }}" alt="img" />
+                            <img class="hover-bg feature-logo"
+                                 src="{{ asset('/assets/img/home-3/DANA GROUP LOGO-03.jpg') }}"
+                                 alt="img"/>
                         </div>
                     </div>
                     <div class="col-lg-8">
@@ -151,9 +148,9 @@
                             <div class="section-title mb-0">
                                 <h6 class="sub-title text-base mb-3">
                                     <svg class="me-2" width="40" height="12" viewBox="0 0 40 12" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="20" width="20" height="2" fill="#1869FE" />
-                                        <rect y="10" width="40" height="2" fill="#1869FE" />
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="20" width="20" height="2" fill="#1869FE"/>
+                                        <rect y="10" width="40" height="2" fill="#1869FE"/>
                                     </svg>
                                     About Company
                                 </h6>
@@ -161,9 +158,11 @@
                                     Building Zambia's Future with Global Insight and Local Action
                                 </h2>
                                 <p class="mb-4 text-smal">
-                                    Dana Holdings synergizes the operations of its brands, each a leader in its field—Dana
+                                    Dana Holdings synergizes the operations of its brands, each a leader in its
+                                    field—Dana
                                     Services, Dana Oil, Danatrac Limited, and Terotech Construction. We are a beacon of
-                                    excellence, with a strategic focus on sectors that include mining support, agriculture,
+                                    excellence, with a strategic focus on sectors that include mining support,
+                                    agriculture,
                                     energy, and construction, ensuring we play a pivotal role in Zambia's growth.
                                 </p>
                                 <div class="row">
@@ -242,7 +241,7 @@
                     <div class="col-lg-5 order-lg-2">
                         <div class="about-thumb-wrap mb-lg-0 mb-5">
                             <img class="hover-bg margin-bottom--150" src="assets/img/home-3/Philosophy.jpg"
-                                alt="img" />
+                                 alt="img"/>
                         </div>
                     </div>
                     <div class="col-lg-7 order-lg-1 align-self-center">
@@ -261,7 +260,9 @@
                                         <img src="assets/img/home-3/19.png" alt="img" />
                                     </div> --}}
                                     <div class="media-body">
-                                        <h6 style="color: #cb0308" class="text">Dana Services</h6>
+                                        <a href="{{ url('about_dana_services') }}" target="_blank">
+                                            <h6 style="color: #cb0308" class="text">Dana Services</h6>
+                                        </a>
                                         <p class="mb-0 text-white l">
                                             Leading with excellence in industrial and agricultural support services.
                                         </p>
@@ -272,7 +273,9 @@
                                         <img src="assets/img/home-3/20.png" alt="img" />
                                     </div> --}}
                                     <div class="media-body">
-                                        <h6 style="color: #28b3ea" class="text">Dana Oil</h6>
+                                        <a href="{{ url('about_dana_oil') }}" target="_blank"><h6 style="color: #28b3ea"
+                                                                                                  class="text">
+                                                Dana Oil</h6></a>
                                         <p class="mb-0 text-white">
                                             Energizing the nation as the premier distributor of energy solutions and
                                             lubricants.
@@ -285,7 +288,9 @@
                                         <img src="assets/img/home-3/20.png" alt="img" />
                                     </div> --}}
                                     <div class="media-body">
-                                        <h6 style="color: #87cc19" class="text">Danatrac Limited</h6>
+                                        <a href="{{ url('about_dana_trac') }}" target="_blank">
+                                            <h6 style="color: #87cc19" class="text">Danatrac Limited</h6>
+                                        </a>
                                         <p class="mb-0 text-white">
                                             Advancing agribusiness with state-of-the-art agricultural machinery and
                                             implements.
@@ -298,9 +303,12 @@
                                         <img src="assets/img/home-3/19.png" alt="img" />
                                     </div> --}}
                                     <div class="media-body">
-                                        <h6 style="color: #ff8a00" class="text">Terotech Construction</h6>
+                                        <a href="{{ url('about_terotech') }}" target="_blank">
+                                            <h6 style="color: #ff8a00" class="text">Terotech Construction</h6>
+                                        </a>
                                         <p class="mb-0 text-white">
-                                            Building a better tomorrow with cutting-edge construction and waste management
+                                            Building a better tomorrow with cutting-edge construction and waste
+                                            management
                                             services.
                                         </p>
                                     </div>
@@ -341,8 +349,9 @@
                                 <h6>Identification of Needs</h6>
                                 <p>Dana Holdings begins with understanding the unique needs across industries.</p>
                                 <div class="count"
-                                    style="width: 60px; height: 60px; border-radius: 50%; line-height: 60px; font-size: 20px; display: inline-block; background-color: #cb0308; color: white;">
-                                    01</div>
+                                     style="width: 60px; height: 60px; border-radius: 50%; line-height: 60px; font-size: 20px; display: inline-block; background-color: #cb0308; color: white;">
+                                    01
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -359,8 +368,9 @@
                                 <h6>Resource Sharing</h6>
                                 <p>Our brands leverage Dana Holdings' collective resources for optimal solutions.</p>
                                 <div class="count"
-                                    style="width: 60px; height: 60px; border-radius: 50%; line-height: 60px; font-size: 20px; display: inline-block; background-color: #28b3ea; color: white;">
-                                    02</div>
+                                     style="width: 60px; height: 60px; border-radius: 50%; line-height: 60px; font-size: 20px; display: inline-block; background-color: #28b3ea; color: white;">
+                                    02
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -375,10 +385,12 @@
                             </div>
                             <div class="details">
                                 <h6>Integrated Solutions</h6>
-                                <p>We craft integrated offerings, combining the strengths of each Dana Holdings brand.</p>
+                                <p>We craft integrated offerings, combining the strengths of each Dana Holdings
+                                    brand.</p>
                                 <div class="count"
-                                    style="width: 60px; height: 60px; border-radius: 50%; line-height: 60px; font-size: 20px; display: inline-block; background-color: #87cc19; color: white;">
-                                    03</div>
+                                     style="width: 60px; height: 60px; border-radius: 50%; line-height: 60px; font-size: 20px; display: inline-block; background-color: #87cc19; color: white;">
+                                    03
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -395,8 +407,9 @@
                                 <h6>Execution Excellence</h6>
                                 <p>Seamless, timely execution ensures Dana Holdings' brands deliver on our promise.</p>
                                 <div class="count"
-                                    style="width: 60px; height: 60px; border-radius: 50%; line-height: 60px; font-size: 20px; display: inline-block; background-color: #ff8a00; color: white;">
-                                    04</div>
+                                     style="width: 60px; height: 60px; border-radius: 50%; line-height: 60px; font-size: 20px; display: inline-block; background-color: #ff8a00; color: white;">
+                                    04
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -426,7 +439,8 @@
                             <h2 class="title mb-4">Get in touch!</h2>
                             <p>
                                 Discover the depth and breadth of Dana Holdings' impact on Zambia’s economic landscape.
-                                Engage with us to learn how our international partnerships and local operations can support
+                                Engage with us to learn how our international partnerships and local operations can
+                                support
                                 your goals and contribute to sustainable economic progress.
                             </p>
                         </div>
@@ -448,10 +462,10 @@
                         <div class="quote-wrap ms-xl-5" style="background: #d9b919">
                             <h4 class="mb-4">Contact Us</h4>
                             <div class="single-input-inner style-bg border-radius-5">
-                                <input type="text" placeholder="Your Name" />
+                                <input type="text" placeholder="Your Name"/>
                             </div>
                             <div class="single-input-inner style-bg border-radius-5">
-                                <input type="text" placeholder="Your Name" />
+                                <input type="text" placeholder="Your Name"/>
                             </div>
 
                             <div class="row">
