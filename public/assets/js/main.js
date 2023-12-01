@@ -133,7 +133,7 @@
             animateIn: 'fadeIn',
             loop: true,
             autoplay: true,
-            autoplayTimeout: 10000,
+            autoplayTimeout: 5000,
             nav: true,
             dots: false,
             items: 1,
@@ -330,7 +330,7 @@
 
         $('.slider-for').slick({
             autoplay: true,
-            autoplaySpeed: 10000,
+            autoplaySpeed: 5000,
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
@@ -340,7 +340,7 @@
 
         $('.slider-nav').slick({
             autoplay: true,
-            autoplaySpeed: 10000,
+            autoplaySpeed: 5000,
             slidesToShow: 3,
             slidesToScroll: 1,
             asNavFor: '.slider-for',
